@@ -34,9 +34,11 @@ We didn't install any external libraries or dependencies besides the ones alread
 There are a few steps to follow:
 
 1. Make sure you have a Databricks Community account.
-2. Load the [files](https://github.com/winnin/desafio_dataeng/tree/main) ([post_creator.json.gz](https://github.com/winnin/desafio_dataeng/blob/main/posts_creator.json.gz), [wiki_pages.json.gz](https://github.com/winnin/desafio_dataeng/blob/main/wiki_pages.json.gz)) described in the [Instructions](https://github.com/winnin/desafio_dataeng/blob/main/README.md#instru%C3%A7%C3%B5es) section in Databricks. You can follow the instructions written there to load them. To do so, you can use the path **Catalog** -> **Create Table** -> **Drop Files To Upload**.
+2. Create a cluster with the configs shown in the **Environment** section. You can create in the menu **Compute** -> **Create compute**.
 3. Make sure the **default** database exists on **Catalog** -> **Databases**.
-4. Create a cluster with the configs shown in the **Environment** section. You can create in the menu **Compute** -> **Create compute**.
+4. Load the [files](https://github.com/winnin/desafio_dataeng/tree/main) ([post_creator.json.gz](https://github.com/winnin/desafio_dataeng/blob/main/posts_creator.json.gz), [wiki_pages.json.gz](https://github.com/winnin/desafio_dataeng/blob/main/wiki_pages.json.gz)) described in the [Instructions](https://github.com/winnin/desafio_dataeng/blob/main/README.md#instru%C3%A7%C3%B5es) section in Databricks. You can follow the instructions written there to load them. To do so, you can use the path **Catalog** -> **Create Table** -> **Drop Files To Upload**.
+
+
 
 
 ### Logging
