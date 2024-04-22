@@ -7,7 +7,7 @@ import datetime
 
 # COMMAND ----------
 
-# MAGIC %run ./utils
+# MAGIC %run /Users/helioassakura@gmail.com/utils
 
 # COMMAND ----------
 
@@ -76,10 +76,6 @@ display(get_top_3_liked_posts_by_creator(users_yt, posts_creator, "likes", "user
 
 # COMMAND ----------
 
-display(get_top_3_liked_posts_by_creator(users_yt, posts_creator, "likes", "user_id"))
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC
 # MAGIC ### 4.2 Top 3 most viewed posted videos for each creator in last 6 months 
@@ -120,15 +116,11 @@ display(get_top_3_viewed_posts_by_creator(users_yt, posts_creator, "views", "use
 
 # COMMAND ----------
 
-display(get_top_3_viewed_posts_by_creator(users_yt, posts_creator, "views", "user_id"))
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC
 # MAGIC > **Comment**
 # MAGIC >
-# MAGIC > Having a graph showing the results is very important. For example, we can see that the most liked video (1.7 MM) is not the most watched (68MM).
+# MAGIC > Having a graph showing the results is very important. You can check with the images in the **images** folder. For example, we can see that the most liked video (1.7 MM) is not the most watched (68MM).
 # MAGIC >
 # MAGIC > Checking the title, we can see that the channel with the most watched video is a "children" content channel, and looks like that there's not much interaction. For example, the most liked video from `portadosfundos` **has the same number of likes** of checkgate's most liked video, but **less than one third of the views**.
 
@@ -199,10 +191,6 @@ def get_total_posts_by_month_and_creator(df_users: DataFrame, df_posts: DataFram
             ) \
             .select("user_id", "month", "total_posts") \
             .orderBy("user_id", "month")
-
-display(get_total_posts_by_month_and_creator(users_yt, posts_creator))
-
-# COMMAND ----------
 
 display(get_total_posts_by_month_and_creator(users_yt, posts_creator))
 
@@ -291,10 +279,6 @@ df_months_filtered = \
     .select("month")
 
 df_posts_by_month = get_total_posts_by_month_and_creator(users_yt, posts_creator)
-
-display(get_total_posts_with_all_months(users_yt, df_months_filtered, df_posts_by_month))
-
-# COMMAND ----------
 
 display(get_total_posts_with_all_months(users_yt, df_months_filtered, df_posts_by_month))
 

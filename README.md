@@ -53,6 +53,10 @@ There are a few comments in the code, usually giving a hint of why the code was 
 
 The Notebooks have a few markdown cells to better guide you throught it.
 
+### Images
+
+There's a folder named `images` that contains some graphs for the Exercise 4. You can do some analysis with them, for example, percentage of likes vs views, users that post more frequently, etc.
+
 ### Comments in Markdown cells
 
 Throughout the code, I placed a few cells with some observations, comments or decisions made.
