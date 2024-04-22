@@ -92,6 +92,8 @@ Each notebook has a few cells with Integration and Unity Tests.
 
 ### Running the Notebooks
 
+Make sure all the Notebooks are in the same folder.
+
 Assuming you have Databricks setup done, you can run the Notebooks. They should be executed in the following order:
 
 >**1 - create_table_creators_scrape_wiki** -> **2 - create_table_posts_creator** -> **3 - create_table_user_yt_from_wikipedia_api** -> **4 - analyze_creators**
