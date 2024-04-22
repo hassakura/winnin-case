@@ -7,7 +7,7 @@ import datetime
 
 # COMMAND ----------
 
-# MAGIC %run /Users/helioassakura@gmail.com/utils
+# MAGIC %run ./utils
 
 # COMMAND ----------
 

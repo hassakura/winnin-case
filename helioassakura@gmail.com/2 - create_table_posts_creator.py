@@ -4,7 +4,7 @@ from pyspark.sql.functions import from_unixtime, col, when, count
 
 # COMMAND ----------
 
-# MAGIC %run /Users/helioassakura@gmail.com/utils
+# MAGIC %run ./utils
 
 # COMMAND ----------
 
